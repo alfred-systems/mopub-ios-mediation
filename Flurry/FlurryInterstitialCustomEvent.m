@@ -14,6 +14,7 @@
     #import "MPLogging.h"
 #endif
 
+/*
 @interface  FlurryInterstitialCustomEvent()
 
 @property (nonatomic, strong) UIView* adView;
@@ -168,3 +169,4 @@
 }
 
 @end
+*/

@@ -152,10 +152,11 @@
   // See if the ad contains the nativeVideoView and add GADMediaView as its
   // subview if it does. If not see if the ad contains the nativeMainImageView
   // and add GADMediaView as its subview if it does.
-  if ([self.adView respondsToSelector:@selector(nativeVideoView)]) {
-    [self.adView.nativeVideoView addSubview:self.unifiedNativeAdView.mediaView];
-    [self.unifiedNativeAdView.mediaView gad_fillSuperview];
-  } else if ([self.adView respondsToSelector:@selector(nativeMainImageView)]) {
+//  if ([self.adView respondsToSelector:@selector(nativeVideoView)]) {
+//    [self.adView.nativeVideoView addSubview:self.unifiedNativeAdView.mediaView];
+//    [self.unifiedNativeAdView.mediaView gad_fillSuperview];
+//  } else if ([self.adView respondsToSelector:@selector(natisveMainImageView)]) {
+  if ([self.adView respondsToSelector:@selector(nativeMainImageView)]) {
     [self.adView.nativeMainImageView addSubview:self.unifiedNativeAdView.mediaView];
     [self.unifiedNativeAdView.mediaView gad_fillSuperview];
   }
